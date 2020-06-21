@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/sort_menu_icon"
+        android:title="sort"
+        android:icon="@drawable/ic_sort_icon"
+        app:showAsAction="always"
+        >
+
+        <menu>
+
+            <group>
+                <item
+                    android:title="sort by name"
+                    android:id="@+id/menu_sort_by_name"
+                    />
+
+                <item
+                    android:title="sort by last modified"
+                    android:id="@+id/menu_sort_by_lastmodified"
+                    />
+
+                <item
+                    android:title="sort by size"
+                    android:id="@+id/menu_sort_by_size"
+                    />
+
+            </group>
+
+        </menu>
+
+    </item>
+
+
+
+</menu>

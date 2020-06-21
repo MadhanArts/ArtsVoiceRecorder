@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/single_list_item_view"
+    >
+
+    <ImageView
+        android:id="@+id/audio_list_image_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/list_play_btn" />
+
+    <TextView
+        android:id="@+id/audio_list_file_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="File Name"
+        android:textColor="@color/colorDarkBlue"
+        android:textSize="16sp"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/audio_list_image_view"
+        app:layout_constraintTop_toTopOf="@+id/audio_list_image_view"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/audio_list_file_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="@font/open_sans"
+        android:text="last modified"
+        app:layout_constraintBottom_toBottomOf="@+id/audio_list_image_view"
+        app:layout_constraintStart_toEndOf="@+id/audio_list_image_view" />
+
+    <TextView
+        android:id="@+id/audio_list_file_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:fontFamily="@font/open_sans"
+        android:text="size"
+        app:layout_constraintBottom_toBottomOf="@+id/audio_list_file_date"
+        app:layout_constraintStart_toEndOf="@+id/audio_list_file_date"
+        app:layout_constraintTop_toTopOf="@+id/audio_list_file_date" />
+</androidx.constraintlayout.widget.ConstraintLayout>
